@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{07D939D5-6F7E-40E9-BD3A-F85445355AE9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RIVIERA.NHibernate.Repository</RootNamespace>
+    <AssemblyName>RIVIERA.NHibernate.Repository</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v12.1.Core, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v12.1, Version=12.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="FluentNHibernate, Version=1.3.0.733, Culture=neutral, PublicKeyToken=8aa435e3cb308880, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GlobalReferences\FluentNHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=1.0.1.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GlobalReferences\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=3.3.1.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GlobalReferences\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\ContainerForHotDates.cs" />
+    <Compile Include="Classes\ContainerForShowSales.cs" />
+    <Compile Include="Classes\ContainerShowSaleSecond.cs" />
+    <Compile Include="Classes\Container_pShowSalesForPeriod.cs" />
+    <Compile Include="Classes\EqualityComparerSimpleKeyValue.cs" />
+    <Compile Include="Classes\HelperTour.cs" />
+    <Compile Include="Classes\HelperWriteLog.cs" />
+    <Compile Include="Classes\InnerContainer.cs" />
+    <Compile Include="Classes\KeyValue.cs" />
+    <Compile Include="Classes\LineChart.cs" />
+    <Compile Include="Classes\StringDateAndDayOffWeek.cs" />
+    <Compile Include="ClassFromSite\GetHotDails.cs" />
+    <Compile Include="DomainClasses\Actions.cs" />
+    <Compile Include="DomainClasses\AddNewPair.cs" />
+    <Compile Include="DomainClasses\Airline.cs" />
+    <Compile Include="DomainClasses\CallInformation.cs" />
+    <Compile Include="DomainClasses\CallType.cs" />
+    <Compile Include="DomainClasses\CityDictionary.cs" />
+    <Compile Include="DomainClasses\DictionaryFromDB.cs" />
+    <Compile Include="DomainClasses\DiscountSessionItem.cs" />
+    <Compile Include="DomainClasses\DiscountSessionPlacementItem.cs" />
+    <Compile Include="DomainClasses\Duration.cs" />
+    <Compile Include="DomainClasses\pGetDescriptionCityMobile.cs" />
+    <Compile Include="DomainClasses\pGetFullInfoMobile.cs" />
+    <Compile Include="DomainClasses\pGetMultiAirQuote.cs" />
+    <Compile Include="DomainClasses\pGetRegions.cs" />
+    <Compile Include="DomainClasses\Hotel.cs" />
+    <Compile Include="DomainClasses\HotelStars.cs" />
+    <Compile Include="DomainClasses\IL_ACCOMODATION.cs" />
+    <Compile Include="DomainClasses\IL_CITY.cs" />
+    <Compile Include="DomainClasses\IL_COSTS.cs" />
+    <Compile Include="DomainClasses\IL_COUNTRY.cs" />
+    <Compile Include="DomainClasses\IL_HOTEL.cs" />
+    <Compile Include="DomainClasses\IL_OBJECT.cs" />
+    <Compile Include="DomainClasses\IL_PANSION.cs" />
+    <Compile Include="DomainClasses\IL_RATES.cs" />
+    <Compile Include="DomainClasses\IL_ROOMCATEGORY.cs" />
+    <Compile Include="DomainClasses\IL_ROOMTYPE.cs" />
+    <Compile Include="DomainClasses\IL_SPO.cs" />
+    <Compile Include="DomainClasses\IL_STOPSALELIST.cs" />
+    <Compile Include="DomainClasses\KICKBACK.cs" />
+    <Compile Include="DomainClasses\Options.cs" />
+    <Compile Include="DomainClasses\OptionsMap.cs" />
+    <Compile Include="DomainClasses\pGetKickbackByCityKey.cs" />
+    <Compile Include="DomainClasses\pShowSalesForDate.cs" />
+    <Compile Include="DomainClasses\COUNTRY.cs" />
+    <Compile Include="DomainClasses\CountryWithCity.cs" />
+    <Compile Include="DomainClasses\fGetRangeWidth.cs" />
+    <Compile Include="DomainClasses\GetReplicationDelay.cs" />
+    <Compile Include="DomainClasses\GlobalPhoneForInvoice.cs" />
+    <Compile Include="DomainClasses\HotDatesGroupDetails.cs" />
+    <Compile Include="DomainClasses\HotelDictionaryForGroupHotel.cs" />
+    <Compile Include="DomainClasses\HotelDictionaryWithCity.cs" />
+    <Compile Include="DomainClasses\HOTELS_GROUP_DETAILS.cs" />
+    <Compile Include="DomainClasses\KeyValue.cs" />
+    <Compile Include="DomainClasses\pGetAirServiceTax.cs" />
+    <Compile Include="DomainClasses\pGetCountryForProgram.cs" />
+    <Compile Include="DomainClasses\pGetDetailsForBurn.cs" />
+    <Compile Include="DomainClasses\pGetFullSumOfBookingInvoice.cs" />
+    <Compile Include="DomainClasses\pGetHistoryInvoice.cs" />
+    <Compile Include="DomainClasses\pGetHotDates.cs" />
+    <Compile Include="DomainClasses\pGetHotDatesDetails.cs" />
+    <Compile Include="DomainClasses\pGetHotDatesGroup.cs" />
+    <Compile Include="DomainClasses\pGetHotelByCity.cs" />
+    <Compile Include="DomainClasses\pGetHotelPrice.cs" />
+    <Compile Include="DomainClasses\pGetHotelsGroup.cs" />
+    <Compile Include="DomainClasses\pGetOrderWebCountry.cs" />
+    <Compile Include="DomainClasses\pGetPartners.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DomainClasses\pGetReportTimingTheTask.cs" />
+    <Compile Include="DomainClasses\pGetResourseForInvoice.cs" />
+    <Compile Include="DomainClasses\pGetSqlProcedureErrorMessage.cs" />
+    <Compile Include="DomainClasses\pGetTransferPrice.cs" />
+    <Compile Include="DomainClasses\pGetTransportByParams.cs" />
+    <Compile Include="DomainClasses\FIN_DEPARTMENTS.cs" />
+    <Compile Include="DomainClasses\FIN_OFFICES.cs" />
+    <Compile Include="DomainClasses\PartialPhoneMan.cs" />
+    <Compile Include="DomainClasses\PARTNERS.cs" />
+    <Compile Include="DomainClasses\pGetCityByCountry.cs" />
+    <Compile Include="DomainClasses\pGetCountryFromForInvoice.cs" />
+    <Compile Include="DomainClasses\pGetInvoiceByIdPartner.cs" />
+    <Compile Include="DomainClasses\pGetInvoiceDetails.cs" />
+    <Compile Include="DomainClasses\pGetTransferByParams.cs" />
+    <Compile Include="DomainClasses\pGetVisaTourist.cs" />
+    <Compile Include="DomainClasses\pGetVisaTouristForSelect.cs" />
+    <Compile Include="DomainClasses\pGetVisaTouristList.cs" />
+    <Compile Include="DomainClasses\PhoneManForInvoice.cs" />
+    <Compile Include="DomainClasses\pShowSalesForPeriod.cs" />
+    <Compile Include="DomainClasses\QUOTES.cs" />
+    <Compile Include="DomainClasses\REGION.cs" />
+    <Compile Include="DomainClasses\ReportPhoneMan.cs" />
+    <Compile Include="DomainClasses\RIV_CALCTASK_STATE.cs" />
+    <Compile Include="DomainClasses\RIV_GETCalcTasksList.cs" />
+    <Compile Include="DomainClasses\SimpleKeyValue.cs" />
+    <Compile Include="DomainClasses\tfnGetOfficesForCall.cs" />
+    <Compile Include="DomainClasses\tfnGetOfficeTypesForCall.cs" />
+    <Compile Include="DomainClasses\TopicCall.cs" />
+    <Compile Include="DomainClasses\TopicCallLink.cs" />
+    <Compile Include="DomainClasses\TourInfo.cs" />
+    <Compile Include="DomainClasses\TourTemplate.cs" />
+    <Compile Include="DomainClasses\Transport.cs" />
+    <Compile Include="DomainClasses\UserList.cs" />
+    <Compile Include="DomainClasses\UserListForInvoice.cs" />
+    <Compile Include="DomainClasses\VisaListTemplate.cs" />
+    <Compile Include="DomainClasses\VisaServiceList.cs" />
+    <Compile Include="DomainClasses\WEB_SESSION_FIN_BILL.cs" />
+    <Compile Include="DomainClasses\www_countries_short.cs" />
+    <Compile Include="MappingClasses\ActionsMap.cs" />
+    <Compile Include="MappingClasses\AddNewPairMap.cs" />
+    <Compile Include="MappingClasses\AirlineMap.cs" />
+    <Compile Include="MappingClasses\CallInformationMap.cs" />
+    <Compile Include="MappingClasses\CallTypeMap.cs" />
+    <Compile Include="MappingClasses\CityDictionaryMap.cs" />
+    <Compile Include="MappingClasses\DictionaryFromDBMap.cs" />
+    <Compile Include="MappingClasses\DiscountSessionItemMap.cs" />
+    <Compile Include="MappingClasses\DiscountSessionPlacementItemMap.cs" />
+    <Compile Include="MappingClasses\DurationMap.cs" />
+    <Compile Include="MappingClasses\pGetDescriptionCityMobileMap.cs" />
+    <Compile Include="MappingClasses\pGetFullInfoMobileMap.cs" />
+    <Compile Include="MappingClasses\pGetMultiAirQuoteMap.cs" />
+    <Compile Include="MappingClasses\pGetRegionsMap.cs" />
+    <Compile Include="MappingClasses\HotelMap.cs" />
+    <Compile Include="MappingClasses\HotelStarsMap.cs" />
+    <Compile Include="MappingClasses\IL_ACCOMODATIONMap.cs" />
+    <Compile Include="MappingClasses\IL_CITYMap.cs" />
+    <Compile Include="MappingClasses\IL_COSTSMap.cs" />
+    <Compile Include="MappingClasses\IL_COUNTRYMap.cs" />
+    <Compile Include="MappingClasses\IL_HOTELMap.cs" />
+    <Compile Include="MappingClasses\IL_OBJECTMap.cs" />
+    <Compile Include="MappingClasses\IL_PANSIONMap.cs" />
+    <Compile Include="MappingClasses\IL_RATESMap.cs" />
+    <Compile Include="MappingClasses\IL_ROOMCATEGORYMap.cs" />
+    <Compile Include="MappingClasses\IL_ROOMTYPEMap.cs" />
+    <Compile Include="MappingClasses\IL_SPOMap.cs" />
+    <Compile Include="MappingClasses\IL_STOPSALELISTMap.cs" />
+    <Compile Include="MappingClasses\KICKBACKMap.cs" />
+    <Compile Include="MappingClasses\pGetKickbackByCityKeyMap.cs" />
+    <Compile Include="MappingClasses\pShowSalesForDateMap.cs" />
+    <Compile Include="MappingClasses\COUNTRYMap.cs" />
+    <Compile Include="MappingClasses\CountryWithCityMap.cs" />
+    <Compile Include="MappingClasses\fGetRangeWidthMap.cs" />
+    <Compile Include="MappingClasses\GetReplicationDelayMap.cs" />
+    <Compile Include="MappingClasses\GlobalPhoneForInvoiceMap.cs" />
+    <Compile Include="MappingClasses\HotDatesGroupDetailsMap.cs" />
+    <Compile Include="MappingClasses\HotelDictionaryForGroupHotelMap.cs" />
+    <Compile Include="MappingClasses\HotelDictionaryWithCityMap.cs" />
+    <Compile Include="MappingClasses\HOTELS_GROUP_DETAILSMap.cs" />
+    <Compile Include="MappingClasses\KeyValueMap.cs" />
+    <Compile Include="MappingClasses\pGetAirServiceTaxMap.cs" />
+    <Compile Include="MappingClasses\pGetCountryForProgramMap.cs" />
+    <Compile Include="MappingClasses\pGetDetailsForBurnMap.cs" />
+    <Compile Include="MappingClasses\pGetFullSumOfBookingInvoiceMap.cs" />
+    <Compile Include="MappingClasses\pGetHistoryInvoiceMap.cs" />
+    <Compile Include="MappingClasses\pGetHotDatesDetailsMap.cs" />
+    <Compile Include="MappingClasses\pGetHotDatesGroupMap.cs" />
+    <Compile Include="MappingClasses\pGetHotDatesMap.cs" />
+    <Compile Include="MappingClasses\pGetHotelByCityMap.cs" />
+    <Compile Include="MappingClasses\pGetHotelPriceMap.cs" />
+    <Compile Include="MappingClasses\pGetHotelsGroupMap.cs" />
+    <Compile Include="MappingClasses\pGetOrderWebCountryMap.cs" />
+    <Compile Include="MappingClasses\pGetPartnersMap.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MappingClasses\pGetReportTimingTheTaskMap.cs" />
+    <Compile Include="MappingClasses\pGetResourseForInvoiceMap.cs" />
+    <Compile Include="MappingClasses\pGetSqlProcedureErrorMessageMap.cs" />
+    <Compile Include="MappingClasses\pGetTransferPriceMap.cs" />
+    <Compile Include="MappingClasses\pGetTransportByParamsMap.cs" />
+    <Compile Include="MappingClasses\pGetCityByCountryMap.cs" />
+    <Compile Include="MappingClasses\pGetCountryFromForInvoiceMap.cs" />
+    <Compile Include="MappingClasses\pGetInvoiceByIdPartnerMap.cs" />
+    <Compile Include="MappingClasses\FIN_DEPARTMENTSMap.cs" />
+    <Compile Include="MappingClasses\FIN_OFFICESMap.cs" />
+    <Compile Include="MappingClasses\PartialPhoneManMap.cs" />
+    <Compile Include="MappingClasses\PARTNERSMap.cs" />
+    <Compile Include="MappingClasses\pGetInvoiceDetailsMap.cs" />
+    <Compile Include="MappingClasses\pGetTransferByParamsMap.cs" />
+    <Compile Include="MappingClasses\pGetVisaTouristForSelectMap.cs" />
+    <Compile Include="MappingClasses\pGetVisaTouristMap.cs" />
+    <Compile Include="MappingClasses\PhoneManForInvoiceMap.cs" />
+    <Compile Include="MappingClasses\pGetVisaTouristListMap.cs" />
+    <Compile Include="MappingClasses\pShowSalesForPeriodMap.cs" />
+    <Compile Include="MappingClasses\QUOTESMap.cs" />
+    <Compile Include="MappingClasses\REGIONMap.cs" />
+    <Compile Include="MappingClasses\ReportPhoneManMap.cs" />
+    <Compile Include="MappingClasses\RIV_CALCTASK_STATEMap.cs" />
+    <Compile Include="MappingClasses\RIV_GETCalcTasksListMap.cs" />
+    <Compile Include="MappingClasses\SimpleKeyValueMap.cs" />
+    <Compile Include="MappingClasses\tfnGetOfficesForCallMap.cs" />
+    <Compile Include="MappingClasses\tfnGetOfficeTypesForCallMap.cs" />
+    <Compile Include="MappingClasses\TopicCallLinkMap.cs" />
+    <Compile Include="MappingClasses\TopicCallMap.cs" />
+    <Compile Include="MappingClasses\TourInfoMap.cs" />
+    <Compile Include="MappingClasses\TourTemplateMap.cs" />
+    <Compile Include="MappingClasses\TransportMap.cs" />
+    <Compile Include="MappingClasses\UserListForInvoiceMap.cs" />
+    <Compile Include="MappingClasses\UserListMap.cs" />
+    <Compile Include="MappingClasses\VisaListTemplateMap.cs" />
+    <Compile Include="MappingClasses\VisaServiceListMap.cs" />
+    <Compile Include="MappingClasses\WEB_SESSION_FIN_BILLMap.cs" />
+    <Compile Include="MappingClasses\www_countriesMap.cs" />
+    <Compile Include="NHibernateHelper.cs" />
+    <Compile Include="DomainClasses\GlobalPhone.cs" />
+    <Compile Include="DomainClasses\PhoneMan.cs" />
+    <Compile Include="MappingClasses\GlobalPhoneMap.cs" />
+    <Compile Include="MappingClasses\PhoneManMap.cs" />
+    <Compile Include="PreparedQuery\PreparedQuery.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
